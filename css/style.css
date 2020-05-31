@@ -218,11 +218,9 @@ h3{
 .img-port{
     width: 350px;
     border-radius: 5px;
-}
-.img-port:hover{
-    width: 360px;
     cursor: pointer;
 }
+
 
 /* responsivo tablet */
 @media(max-width:1169px){
@@ -310,6 +308,7 @@ h3{
         width: 80vw;
         border-radius: 5px;
     }
+    
     
     
 
@@ -430,6 +429,8 @@ h3{
         width: 80vw;
         border-radius: 5px;
     }
+
+    
 
 }
 /* celular */
