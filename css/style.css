@@ -76,12 +76,14 @@ h1{
 .icon img{
     width: 30px;
 }
-.sobre{
+.sobre {
     background-color: rgb(57, 58, 61);
-    padding: 60px 0px;
+    padding-top: 60px;
+    padding-bottom: 10px;
     
     
 }
+
 /* conteudo sobre mim */
 .container-sobre{
     width: 1200px;
@@ -91,6 +93,7 @@ h1{
     margin: auto;
     background-color: rgb(57, 58, 61);
 }
+
 .efeito{
     display: flex;
 }
@@ -123,8 +126,11 @@ h1{
 }
 .sobre-conteudo{
     width: 700px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
 }
-.t2{
+.t2, .t2-dois, .t2-um{
     padding-bottom: 25px ;
     color: #CECECE;
     font-size: 2.3em;
@@ -135,12 +141,13 @@ h1{
     height: auto;
     line-height: 1.8em;
 }
-.cont p{
+.cont p, .conhecimento p{
     color: #ffffff;
     font-size: 1.2em;
 }
 .espaco-btn{
     padding-top: 25px;
+    
 }
 .btn{
     padding: 10px 15px;
@@ -159,15 +166,152 @@ h1{
 }
 /* conteudo sobre mim */
 
+/* conteudo habilidades */
+.container-habilidades{
+    width: 200px;
+    margin: auto;
+    background-color: rgb(57, 58, 61);
+}
+.habilidade-conteudo{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    
+}
+
+.habilidades {
+    background-color: rgb(57, 58, 61);
+    padding-bottom: 60px;
+}
+
+
+h3{
+    color: #CECECE;
+    padding-bottom: 8px;
+    font-weight: 200;
+    font-size: 1.4em;
+}
+
+/* conteudo habilidades */
+
+/*Portifólio*/
+.projeto{
+    background-color: rgb(57, 58, 61);
+    padding: 60px 0px;
+}
+.container-projeto{
+    width: 1200px;
+    background-color: rgb(57, 58, 61);
+    margin: auto;
+}
+.conteudo-port{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-cont{
+    width: 350px;
+    border-radius: 5px;
+}
+
+ 
+.img-port{
+    width: 350px;
+    border-radius: 5px;
+}
+.img-port:hover{
+    width: 360px;
+    cursor: pointer;
+}
+
 /* responsivo tablet */
 @media(max-width:1169px){
-    .container-menu, .container-footer, .container-sobre {
-        width: 700px;
+    .container-menu, .container-footer, .container-sobre,.container-projeto {
+        width: 90%;
         
     }
     header, footer{
         width: 100%;
     }
+
+    .container-sobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+
+    }
+
+    .fundo{
+        width: 20px;
+        height: 49vw;
+        background-color: #CECECE;
+        position: relative;
+        top: 20px;
+    }
+    .fundo2{
+        width: 50vw;
+        height: 20px;
+        background-color: #CECECE;
+        position: relative;
+        left: 20px;
+    }
+    .eu-img{
+    
+        width: 50vw;
+        height: 50vw;
+      
+        
+    }
+
+    
+    .sobre-conteudo{
+       width: 100%;
+       padding-top: 30px;
+       margin: auto;
+    }
+    .cont{
+        width: 100%;
+        height: auto;
+        line-height: 1.8em;
+        
+    }
+
+    .container-habilidades{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 90%;
+        padding-top: 40px;
+    }
+    .habilidade-conteudo{
+        
+        margin: auto;
+        width: 100%;
+    }
+    
+    
+    .conteudo-port{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .card-cont{
+        width: 80vw;
+        border-radius: 5px;
+        padding-bottom: 40px;
+    }
+    
+     
+    .img-port{
+        width: 80vw;
+        border-radius: 5px;
+    }
+    
+    
 
 
 }
@@ -175,8 +319,8 @@ h1{
 
 /* celular */
 @media(max-width:845px){
-    .container-menu, .container-footer, .container-sobre {
-        width: 350px;
+    .container-menu, .container-footer, .container-sobre, .container-projeto {
+        width: 90%;
         
     }
 
@@ -189,15 +333,19 @@ h1{
     }
 
     h1{
-        font-size: 2.0em;
-        margin: 0;
+        font-size: 2.5em;
+        margin-left: 5%;
     }
+    .t2{
+        font-size: 1.8em;
+        color: #CECECE;
+        font-weight: 200;
+    }
+
 
     .banner{
         height: 50vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        
         
     }
 
@@ -211,38 +359,78 @@ h1{
     }
 
     .fundo{
-        width: 10px;
-        height: 250px;
+        width: 20px;
+        height: 49vw;
         background-color: #CECECE;
         position: relative;
-        top: 10px;
+        top: 20px;
     }
     .fundo2{
-        width: 240px;
-        height: 10px;
+        width: 50vw;
+        height: 20px;
         background-color: #CECECE;
         position: relative;
-        left: 10px;
+        left: 20px;
     }
     .eu-img{
     
-        width: 250px;
-        height: 250px;
+        width: 50vw;
+        height: 50vw;
+      
         
     }
     .sobre-conteudo{
-       width: 300px;
+       width: 100%;
        padding-top: 30px;
+       margin: auto;
     }
     .cont{
-        width: 280px;
+        width: 100%;
         height: auto;
         line-height: 1.8em;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+    }  
+    
+    .container-habilidades{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 90%;
+        padding-top: 40px;
+    }
+    .habilidade-conteudo{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+        
+    }
+    .conhecimento{
+        padding-bottom: 20px;
+    }
+    
+    .conteudo-port{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .card-cont{
+        width: 80vw;
+        border-radius: 5px;
+        padding-bottom: 40px;
+    }
+    
+     
+    .img-port{
+        width: 80vw;
+        border-radius: 5px;
     }
 
-
-
-    
 }
 /* celular */
 
